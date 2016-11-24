@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-US" ng-app="myApp">
+	<head>
+    <meta charset="utf-8"> 
+	  
+    <meta name="fragment" content="!" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wealthy-Health</title> 
+		
+	<!-- bootstrap CSS -->
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<!-- bootstrap CSS -->
+	<link href="css/app_custom.css" rel="stylesheet">
+	
+	</head>
+	<body  class="container" ng-controller="MasterCtrl" >
+		<header ng-hide="header_scope">
+				<div class="header">
+  					<div ng-include="'views/common/header.html'"> </div>
+				</div>
+		</header>
+		
+		<ng-view></ng-view>
+		
+		 
+		<footer>
+				<div class="footer">
+  					<div ng-include="'views/common/footer.html'"> </div>
+				</div>
+		</footer> 
+	<script src="js/angular.min.js"></script>
+	<script src="app/modules/angular-route.js"></script> 
+	<script src="app/app.js"></script>
+	<script src="app/routes.js"></script>
+	<script src="app/services/appServices.js"></script>
+	<script src="app/controllers/masterCtrl.js"></script> 
+	<script src="app/controllers/aboutUsCtrl.js"></script> 
+	<script src="app/controllers/careerCtrl.js"></script> 
+	<script src="app/controllers/homeCtrl.js"></script> 
+	<script src="app/controllers/productsCtrl.js"></script> 
+	<script src="app/controllers/indexCtrl.js"></script>
+	<script src="app/controllers.js"></script>  
+	</body>
+</html>
